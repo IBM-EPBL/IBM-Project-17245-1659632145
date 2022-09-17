@@ -2,7 +2,9 @@
 Early Detection of Chronic Kidney Disease using Machine Learning
              
 Team ID- PNT2022TMID53276
+
 College Name- SSN College of Engineering(Autonomous)
+
 Department- Information Technology
 Team Leader- Sri Kavya Hariharan
 Team Member- Yuvan Arvind G
