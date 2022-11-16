@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+        h1 {text-align: center;
+            color: white;
+        }
+
+        body{
+            background-color: #333;
+        }
+
+
+        input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #656865;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0c0e0d;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="/Prediction">Predict</a></li>
+        <li><a class="active" href="/Home">Home</a></li>
+      
+    </ul>
+    <h1>Kidney Disease Prediction</h1>
+
+    <div>
+        <form action="/predict" method="POST">
+          
+          <center><label for="urea">Enter blood_urea:</label><input type="number" name="burea"></center><br>
+          <center><label for="urea">Enter blood Glucose Level:</label><input type="number" name="bglucose"></center><br>
+          <label for="anaemic">Select anaemic or not:</label>
+          <select id="anaemic" name="anaemic">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+          <label for="Coronary Artery">Select Coronary Artery disease or not:</label>
+          <select id="Coronary Artery" name="Coronary Artery">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+          <label for="pus">Select pus cells or not:</label>
+          <select id="pus" name="pus">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+          <label for="rbc">Select red blood cells level:</label>
+          <select id="rbc" name="rbc">
+            <option value="0">above 13 g/dl</option>
+            <option value="1">10-13 g/dl</option>
+            <option value="2">below 10 g/dl</option>
+          </select>
+          <label for="diabetes">Select diabetes mellituse or not:</label>
+          <select id="diabetes " name="diabetes">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+          <label for="pedal edema">Select pedal edema or not:</label>
+          <select id="pedal edema" name="pedal edema">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+          <input type="submit" value="Predict">
+        </form>
+      </div>
+</body>
+</html>
