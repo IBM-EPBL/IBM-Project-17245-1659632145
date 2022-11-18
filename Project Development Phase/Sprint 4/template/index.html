@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .button {
+
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: rgb(163, 154, 154);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px rgb(253, 250, 250);
+        }
+
+        .button:hover {
+            background-color: #333
+        }
+
+        .button:active {
+            background-color: rgb(26, 26, 26);
+            box-shadow: 0 5px rgb(65, 65, 65);
+            transform: translateY(2px);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        h1 {
+            text-align: center;
+            
+        }
+
+        p {
+            text-align: center;
+            font-size: x-large;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+        }
+
+        body {
+            background-color: #333;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            location.replace("/Prediction")
+        }
+    </script>
+    <title>Kidney Disease Detection</title>
+</head>
+
+<body>
+
+
+    <ul>
+        <li><a href="/Prediction">Predict</a></li>
+        <li><a class="active" href="/Home">Home</a></li>
+
+    </ul>
+    <div class="container">
+        <img src="static/kidney-disease-froedtert-today-1200x628.jpeg" alt="kidney" width="1500" height="400" ;>
+
+        <div class="centered">Kidney Disease Prediction</div>
+    </div>
+
+    <br>
+    <br>
+
+    <h3 align="center" style="color:white"> About Chronic Kidney disease:</h3>
+    <p style="color:white">Chronic kidney disease (CKD) means your kidneys are damaged and can’t filter blood the way they should.
+        The disease is called “chronic” because the damage to your kidneys happens slowly over a long period of time.
+        This damage can cause wastes to build up in your body.
+        The kidneys main job is to filter extra water and wastes out of your blood to make urine.
+        To keep your body working properly, the kidneys balance the salts and minerals – such as calcium, phosphorus,
+        sodium, and potassium – that circulate in the blood.
+        Your kidneys also make hormones that help control blood pressure, make red blood cells, and keep your bones
+        strong.
+    </p>
+
+
+    <h3 align="center" style="color:white"> Main causes of Chronic Kidney Disease:</h3>
+    <p style="color:white">Diabetes:
+        Diabetes occurs when your blood sugar remains too high.
+        Over time, unmanaged blood sugar can cause damage to many organs in your body,
+        including the kidneys and heart and blood vessels, nerves, and eyes.
+        <br>
+        High blood pressure:
+        High blood pressure occurs when your blood pressure against the walls of your blood vessels increases.
+        If uncontrolled or poorly controlled, high blood pressure can be a leading cause of heart attacks, strokes, and
+        chronic kidney disease(which can also cause high bp).
+
+    </p>
+
+    <h3 align="center" style="color:white">Common Symtopms</h3>
+    <p style="color:white">
+    <ol style="color:white">
+        Nausea<br>
+        Vomiting<br>
+        Loss of appetite<br>
+        Sleep problems<br>
+        Urinating more or less<br>
+        Decreased mental sharpness<br>
+        Muscle cramps<br>
+        Swelling of feet and ankles<br>
+        Dry, itchy skin<br>
+        High blood pressure (hypertension) that's difficult to control<br>
+    </ol>
+    </p>
+    <br>
+    <br>
+
+    <br>
+    <button class="button" onclick="myFunction()">Predict Disease </button>
+</body>
+
+</html>
